@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '../dist')));
 
 // Database Setup
-const mongoURI = 'mongodbtsrv://pavansagaradas_db_user:IngvLqm08TAsNP91@mlproject.lep03fs.mongodb.net';
+const mongoURI = 'mongodb+srv://pavansagaradas_db_user:IngvLqm08TAsNP91@mlproject.lep03fs.mongodb.net/?appName=mlproject';
 mongoose.connect(mongoURI).then(() => {
   console.log('Connected to MongoDB Compass');
 }).catch((err) => {
